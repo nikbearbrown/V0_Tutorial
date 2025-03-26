@@ -2,7 +2,11 @@
 
 V0 is a revolutionary AI assistant designed specifically for web development, empowering developers to build high-quality web products efficiently. With expertise in JavaScript, HTML, CSS, and modern frameworks, V0 serves as your collaborative partner throughout the entire development process—from initial design concepts to production-ready code.
 
-[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/abmmqvqaqdr.png)](https://youtu.be/NLg2kpBOG7w?si=vL6Jueas05a14g1Z) 
+[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/abmmqvqaqdr.png)](https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq )  
+
+- AI-powered iterations based on your creativity  
+- Design inspired by screenshots from sites like [godly.website](https://godly.website)
+
 
 ## What Makes V0 Different
 
@@ -13,6 +17,8 @@ V0 is built on Tailwind CSS and integrates seamlessly with Shad CN UI components
 Create a free Vercel account
 
 V0 is available at [v0.dev](https://v0.dev) with a free tier, allowing you to experience its capabilities firsthand. As you explore V0, remember that the key to success lies in clear communication, iteration, and a willingness to experiment.
+
+[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/ggqagehbthu.png)](https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq )  
 
 
 ### 1. Kickstart Your Design with Screenshots
@@ -124,6 +130,9 @@ Then check
 Then iterate and change  
 And bugs turn to features in projects you arrange
 
+[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/nypvtoyowie.png)](https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq )  
+
+
 ### 3. Leverage Tailwind CSS Knowledge
 
 Since V0 thinks in Tailwind, using specific Tailwind classes in your prompts yields more precise results.
@@ -209,6 +218,9 @@ V0 might respond with explanations about:
 "Can you explain the difference between serif and sans-serif fonts and when to use each?"
 ```
 
+[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/qwdfrfvjjvd.png)](https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq )  
+
+
 ## Practical Tips for Maximum Effectiveness
 
 1. **Be specific in your requests**
@@ -257,6 +269,8 @@ Let's look at how you might use V0 to build a complete task management applicati
    ```
    "Add a subtle slide-in animation when tasks are completed and moved to the 'Done' section"
    ```
+
+[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/behswqfviya.png)](https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq )  
 
 ## The Future of Development with AI
 
