@@ -2,6 +2,8 @@
 
 V0 is a revolutionary AI assistant designed specifically for web development, empowering developers to build high-quality web products efficiently. With expertise in JavaScript, HTML, CSS, and modern frameworks, V0 serves as your collaborative partner throughout the entire development process—from initial design concepts to production-ready code.
 
+[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/abmmqvqaqdr.png)](https://youtu.be/NLg2kpBOG7w?si=vL6Jueas05a14g1Z) 
+
 ## What Makes V0 Different
 
 V0 is built on Tailwind CSS and integrates seamlessly with Shad CN UI components, allowing it to generate production-ready React components rather than throwaway code. Whether you're a seasoned developer or just starting your web development journey, V0 can help you bring your ideas to life with remarkable speed and precision.
