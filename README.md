@@ -31,6 +31,10 @@ Then iterate and change
 Repeat till your website feels amazing
 ```
 
+[![Video: Maya and V0](https://raw.githubusercontent.com/nikbearbrown/V0_Tutorial/refs/heads/main/Art/abmmqvqaqdr.png)](https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq )  
+
+Watch the video [https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq](https://youtu.be/W0F13DCPLRc?si=w7e8nw-A-svFbSzq)    
+
 This simple workflow allows anyone to create professional websites by starting with simple prompts and refining through conversation with the AI.
 
 ## Project Structure
