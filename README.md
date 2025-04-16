@@ -2,7 +2,7 @@
 
 ## Researchers
 
-Namns
+Names
 
 
 ## AI-Powered Web Development for Everyone
