@@ -1,164 +1,518 @@
+# Humanitarians.ai Website Revamp
 
-# INFO 7390 Advances in Data Sciences and Architecture (The Art and Science of Data)
+Build with V0 by Vercel using TypeScript and React (TSX)
 
-**Garbage-In Garbage Out (GIGO)** may be the most widely used maxim in machine learning, but how does one assess the quality of each step in an analysis pipeline? This course teaches students how to understand their data, models, and pipelines using visualization.
+## 🧩 Overview
+This document outlines the project structure, contribution guidelines, and component responsibilities for the revamp of https://www.humanitarians.ai using the Bento template and inspiration from Fylla.
 
-## Part I - Understanding Data
+## 🧑‍💻 Contribution Guidelines
 
-The first part of the course covers understanding the statistical properties of a data set visually, how to fix issues with their data, and how to graphically demonstrate how the data was improved. The choice of the right chart for a particular question is covered. The principles of visual design, including typography, contrast, balance, emphasis, movement, white space, proportion, hierarchy, repetition, rhythm, pattern, unity, and variety are covered.
+### ✅ Component Ownership
+* Each contributor should **claim a component** by putting their name next to it in this document or the project tracker.
+* **Work only within your component folder** and do not modify others' code without collaboration.
 
-### 1A - Data Preprocessing and Prep
+### 💻 Coding Standards
+* **Framework**: React + TypeScript (.tsx)
+* **Styling**: TailwindCSS (preferred), or modular SCSS if needed.
+* **Naming**:
+   * Use **PascalCase** for components (e.g., BlogCard.tsx).
+   * Use **camelCase** for variables and function names.
+* **Folder Structure**: One folder per component, including its .tsx, .module.css/.ts, test files, and assets if needed.
+* **Commit Messages**: Use meaningful commits. Example: feat: add HeroSection component
 
-In this segment of the course, students will be immersed in the crucial initial steps of data science: data preprocessing and preparation. Before any robust analysis can occur, it's essential to ensure the data is clean, relevant, and ready for exploration. We'll begin by introducing the foundational techniques to clean and transform raw data, ensuring its quality and integrity. This involves handling missing data, outliers, and potential errors that can skew results.
+### 📐 Project Rules
+* All pages are **static**.
+* Follow **modular development** – build components as reusable blocks.
+* Respect the file structure.
+* Add your name to your component in this README.
 
-Furthermore, students will learn about normalization and standardization processes, enabling them to make disparate data sets comparable. Techniques such as one-hot encoding and binning will be covered, emphasizing the need to make data machine-readable, particularly when preparing for machine learning or statistical modeling.
+## 📁 Project Structure
+```
+/project-root
+│
+├── components/
+│   ├── Header/
+│   │   └── Header.tsx
+│   ├── Footer/
+│   ├── HeroSection/
+│   ├── BlogCard/
+│   ├── ProjectCard/
+│   └── ...
+│
+├── pages/
+│   ├── index.tsx
+│   ├── about.tsx
+│   ├── services.tsx
+│   ├── projects.tsx
+│   ├── blog.tsx
+│   ├── donate.tsx
+│   └── contact.tsx
+│
+├── public/
+│   └── assets/
+│       ├── images/
+│       └── logos/
+│
+├── styles/
+│   └── globals.css
+│
+├── utils/
+│   └── api.ts
+│
+├── data/
+│   ├── blogPosts.json
+│   └── projects.json
+│
+├── types/
+│   └── index.ts
+│
+├── README.md
+└── tsconfig.json
+```
 
-As data comes in various forms - from textual and categorical to numerical - we'll delve deep into transforming these different data types to be more suited for analysis. The end goal of this segment is to equip students with the skills needed to turn raw, messy data into a polished and prepared asset, setting a solid foundation for subsequent analysis and visualization.
+## 🔧 Components to Build
 
-### 1B - Data Analysis and Improvement
+| **Component** | **Description** | **Assigned To** |
+|---------------|-----------------|-----------------|
+| Header | Top navigation bar | |
+| Footer | Global footer | |
+| HeroSection | Intro section on main page | |
+| FeaturedWork | Carousel or grid for featured projects | |
+| WhatWeDo | Mission summary and core activities | |
+| LatestNews | Recent blogs or news cards | |
+| BlogCard | Individual blog preview | |
+| ProjectCard | Summary of a project | |
+| DonationSection | Content + payment gateway options | |
+| ContactForm | Form + contact details | |
+| AboutTeam | Team member profiles | |
+| ValuesSection | Organizational values | |
+| JourneyTimeline | Visual timeline of org history | |
+| ServicesOverview | Mentorship/fellowship program summary + CTAs | |
+| Testimonials | Donor/mentee quotes and experiences | |
+| CTASection | Reusable call-to-action block | |
 
-In this segment of the course, students will be introduced to a visual understanding of a dataset's statistical properties. This includes identifying potential problems within the data and implementing corrective measures. We'll also delve into effective graphical methods to showcase the enhancement and transformation of data. An essential part of this section is selecting the most suitable chart type to address specific questions or insights about the dataset.
+## ✨ Tips for Success
+* Keep components **atomic** – small, focused, and composable.
+* Maintain **accessibility** (ARIA labels, keyboard support).
+* Use **TypeScript interfaces** for all props.
+* Leverage **V0-generated code** but refactor for reusability and DRYness.
+* Test your component in isolation before integration.
 
-### 1C - Principles of Visual Design in Data Presentation
+Let's build something meaningful together! 🚀
 
-In this segment, we put emphasis on the art and science of visual design as it pertains to data presentation. Students will explore various fundamental principles, including typography, contrast, and balance. Additionally, we'll discuss advanced design concepts such as emphasis, movement, the strategic use of white space, proportion, hierarchy, and more. We'll also delve into the significance of repetition, rhythm, pattern, unity, and variety, ensuring that the data is not only accurate but also aesthetically compelling and easily comprehensible.
+## Appendix: TSX and Tailwind CSS Guide for Humanitarians.ai
 
-## Part II - Generative AI for Data
+### Understanding TSX
 
-### 2A - Understanding Generative AI
+TSX (TypeScript JSX) is a syntax extension for TypeScript that allows you to write React components with type safety. It combines the power of TypeScript for static type checking with JSX for writing HTML-like syntax in JavaScript.
 
-Dive deep into the world of generative AI and its impressive capability to produce content. This section introduces its practical uses and constraints. We will differentiate between traditional machine learning models, generative AI, and artificial general intelligence (AGI). Additionally, we'll uncover the primary elements fueling the progress of generative AI.
+#### Key TSX Concepts
 
-### 2B - Building Generative AI Systems
+##### 1. Component Structure
 
-This segment details the crucial procedures involved in crafting generative AI systems. Topics covered include research, design, data gathering, model training, and assessment. Emphasis is placed on the importance of varied datasets and cutting-edge training strategies. We will also explore the different evaluation techniques, highlighting their advantages and drawbacks.
+A basic TSX component looks like this:
 
-### 2C - Employing Generative AI for Synthetic Data Creation
+```tsx
+import React from 'react';
 
-In this section, we venture into the practical application of generative AI in fabricating synthetic data. Whether it's text, visuals, videos, or soundscapes, generative AI offers innovative solutions for generating authentic-seeming content. We'll break down the mechanics behind these processes, demonstrating how cutting-edge models can craft content that's nearly indistinguishable from real-world data, and discuss the potential advantages and challenges of using synthetic data across various sectors.
+interface HeroProps {
+  title: string;
+  subtitle?: string; // Optional prop
+  onCtaClick: () => void;
+}
 
-### 2D - Leveraging Generative AI for Data Verification
+const HeroSection: React.FC<HeroProps> = ({ title, subtitle, onCtaClick }) => {
+  return (
+    <div className="hero">
+      <h1>{title}</h1>
+      {subtitle && <p>{subtitle}</p>}
+      <button onClick={onCtaClick}>Learn More</button>
+    </div>
+  );
+};
 
-In this segment, we explore how generative AI can play a pivotal role in data verification. By harnessing the power of large language models (LLMs) and cross-referencing information across them, we can enhance the accuracy and reliability of our data. We'll discuss the methodologies behind this innovative approach, detailing how multiple LLMs can be employed in tandem to validate the authenticity of a piece of information. Additionally, we'll touch upon the benefits of this process, emphasizing the increased trustworthiness of data and the reduction in misinformation.
+export default HeroSection;
+```
 
-## Part III - Causal Inference
+##### 2. Type Definitions
 
-The third part of the course covers visualizing causal relationships in data. The emphasis is on understanding visual techniques for separating causal relationships for correlation.
+Define interfaces for your data structures:
 
-### 3A - What is Causal Inference?
+```tsx
+// types/index.ts
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  content: string;
+  author: TeamMember;
+  publishDate: string;
+  tags: string[];
+}
 
-In this segment of the course, we will delve into the fundamental concept of causal inference, demystifying the distinction between correlation and causation. Students will be introduced to the idea that while many factors might be correlated, not all are causative. We will explore the principles underlying causality, elucidating why it's a cornerstone in many scientific disciplines, especially in social sciences, medicine, and economics.
+export interface TeamMember {
+  id: string;
+  name: string;
+  role: string;
+  bio: string;
+  imageUrl: string;
+  socialLinks?: {
+    twitter?: string;
+    linkedin?: string;
+    github?: string;
+  };
+}
+```
 
-Through real-world examples, learners will gain a grasp on the importance of discerning causative factors in various scenarios - from public policy decisions to medical treatments. Discussions will revolve around the challenges faced in establishing causality, especially when experiments are impractical or unethical.
+##### 3. Using TypeScript with Props
 
-The segment will lay the foundation for understanding the differences between observational studies and randomized controlled trials (RCTs), highlighting the strengths and pitfalls of each approach. Moreover, students will be introduced to potential outcomes and counterfactual frameworks, which provide a structured way to think about cause and effect. By the end of this section, students will have a solid grasp of why causal inference is vital, its challenges, and the fundamental tools and concepts used to determine causality in data.
+```tsx
+// Consuming typed props
+import { BlogPost } from '../types';
 
+interface BlogCardProps {
+  post: BlogPost;
+  isHighlighted?: boolean;
+}
 
+const BlogCard: React.FC<BlogCardProps> = ({ post, isHighlighted = false }) => {
+  // Component implementation
+};
+```
 
-### 3B - Visual Techniques in Causal Data
+### Tailwind CSS Essentials
 
-In this segment of the course, the primary focus will be on the visualization of causal relationships within datasets. We aim to provide a robust understanding of visual methods that can be employed to distinguish genuine causal connections from mere correlations. This involves diving deep into concepts such as confounding, causal graphs, and the intricate relationship between Directed Acyclic Graphs (DAGs) and probability distributions. The segment will also highlight the significance of paths and associations, along with the idea of conditional independence through d-separation.
+Tailwind CSS is a utility-first CSS framework that allows you to build designs directly in your markup by composing utility classes.
 
-### 3C - Advanced Causal Analysis Techniques
+#### Key Tailwind Concepts
 
-Venturing further into the realm of causality, this segment dives into the practical aspects and methodologies used in observational studies. Techniques and concepts such as optimal matching, sensitivity analysis, and Inverse Probability of Treatment Weighting (IPTW) will be detailed. The course will subsequently move into the nuances of marginal structural models, providing insights on IPTW estimation and the meticulous process of causal effect identification and estimation. This part of the course aims to equip students with the advanced tools and knowledge necessary for in-depth causal analyses in complex scenarios.
+##### 1. Basic Utility Classes
 
-## Learning Objectives
+```tsx
+// Example component with Tailwind classes
+const Button: React.FC<ButtonProps> = ({ label, variant = 'primary', onClick }) => {
+  return (
+    <button 
+      className={`
+        px-4 py-2 rounded-md font-medium transition-colors
+        ${variant === 'primary' ? 'bg-blue-600 text-white hover:bg-blue-700' : ''}
+        ${variant === 'secondary' ? 'bg-gray-200 text-gray-800 hover:bg-gray-300' : ''}
+        ${variant === 'ghost' ? 'bg-transparent text-blue-600 hover:bg-blue-50' : ''}
+      `}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
+};
+```
 
-Upon completion of this course, students will be able to:
+##### 2. Responsive Design
 
-* **General Understanding:**
-  * Recognize the importance of data quality in machine learning and analysis pipelines.
-  * Utilize visualization techniques to gain insights into data, models, and pipelines.
+Tailwind makes responsive design simple with breakpoint prefixes:
 
-* **Understanding Data:**
-  * Visually interpret the statistical properties of datasets.
-  * Identify and rectify issues within datasets.
-  * Select appropriate chart types to address specific analytical questions.
-  * Apply principles of visual design, including but not limited to typography, contrast, balance, and hierarchy, to enhance data presentation.
+```tsx
+<div className="
+  w-full         // Mobile (default)
+  md:w-1/2       // Medium screens (768px+)
+  lg:w-1/3       // Large screens (1024px+)
+  p-4            // Padding on all screens
+  md:p-6         // More padding on medium screens
+">
+  Content here
+</div>
+```
 
-* **Data Analysis and Improvement:**
-  * Implement corrective measures to address potential problems within datasets.
-  * Use graphical methods to demonstrate the enhancement and transformation of data.
+#### 3. Common Patterns for Humanitarians.ai
 
-* **Principles of Visual Design in Data Presentation:**
-  * Comprehend and apply foundational visual design principles to data representation.
-  * Understand advanced design principles like emphasis, movement, proportion, hierarchy, repetition, and unity in data visualization.
+##### Card Component
 
-* **Generative AI for Data:**
-  * Understand the fundamental differences and relationships between traditional machine learning, generative AI, and AGI.
-  * Comprehend the practical applications and constraints of generative AI.
-  * Construct generative AI systems, from research and design to data gathering and training.
-  * Utilize generative AI for synthetic data creation and data verification.
+```tsx
+<div className="bg-white rounded-lg shadow-md overflow-hidden">
+  <img src={imageUrl} alt={title} className="w-full h-48 object-cover" />
+  <div className="p-4">
+    <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+    <p className="mt-2 text-gray-600">{excerpt}</p>
+    <div className="mt-4 flex justify-between items-center">
+      <span className="text-sm text-gray-500">{formatDate(date)}</span>
+      <button className="text-blue-600 hover:text-blue-800">Read More →</button>
+    </div>
+  </div>
+</div>
+```
 
-* **Causal Inference:**
-  * Visualize and comprehend causal relationships in datasets.
-  * Separate genuine causal connections from correlations using advanced visual techniques.
-  * Utilize advanced causal analysis techniques in observational studies.
-  * Understand and apply concepts like confounding, causal graphs, Directed Acyclic Graphs (DAGs), and the relationship between DAGs and probability distributions.
+##### Hero Section
 
-## Weekly Schedule
+```tsx
+<section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+  <div className="container mx-auto px-4 py-16 md:py-24">
+    <div className="max-w-2xl">
+      <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+        Empowering Humanitarian Efforts with AI
+      </h1>
+      <p className="mt-4 text-xl text-blue-100">
+        Connecting technology experts with humanitarian organizations to solve global challenges.
+      </p>
+      <div className="mt-8 flex flex-wrap gap-4">
+        <button className="bg-white text-blue-700 px-6 py-3 rounded-md font-medium hover:bg-blue-50">
+          Get Involved
+        </button>
+        <button className="bg-transparent border border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white/10">
+          Learn More
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+```
 
-### Week 1
-* **Information Visualization:** Foundations, Data Abstraction
-* Fundamental Graphs and Data Transformation
-* Graphical Components and Mapping Strategies
-* Basic data statistics and Exploratory Data Analysis (EDA)
+### Best Practices for the Humanitarians.ai Project
 
-### Week 2
-* Perception for Information Visualization
-* Effectiveness of Visual Channels
-* Identifying Statistical Properties: A Visual Approach
-* Data Issue Diagnosis and Rectification Strategies
+#### 1. Component Organization
 
-### Week 3
-* Demonstrating Data Improvement through Graphics
-* Chart Selection for Specific Analytical Questions
-* Introduction to Principles of Visual Design
-* Typography, Contrast, and Balance in Data Presentation
+```
+/components
+  /common
+    /Button
+      Button.tsx
+      Button.test.tsx
+    /Card
+      Card.tsx
+      Card.test.tsx
+  /layout
+    /Header
+      Header.tsx
+    /Footer
+      Footer.tsx
+  /sections
+    /HeroSection
+      HeroSection.tsx
+    /FeaturedWork
+      FeaturedWork.tsx
+```
 
-### Week 4
-* Advanced Visual Design: Emphasis, Movement, White Space
-* The Role of Proportion, Hierarchy, Repetition in Visualization
-* Delving Deeper: Rhythm, Pattern, Unity, and Variety in Design
+#### 2. Tailwind Configuration
 
-### Week 5
-* Introduction to Generative AI: Distinguishing Traditional ML, Generative AI, and AGI
-* Real-world Applications and Limitations of Generative AI
+Create a `tailwind.config.js` file to customize your theme:
 
-### Week 6
-* Crafting Generative AI Systems: Research and Design Phases
-* The Importance of Diverse Data Gathering
+```js
+// tailwind.config.js
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx}',
+    './components/**/*.{js,ts,jsx,tsx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'hai-blue': {
+          50: '#f0f7ff',
+          100: '#e0efff',
+          500: '#3b82f6',
+          700: '#1d4ed8',
+          900: '#1e3a8a',
+        },
+        'hai-neutral': {
+          50: '#f9fafb',
+          100: '#f3f4f6',
+          200: '#e5e7eb',
+          700: '#374151',
+          900: '#111827',
+        },
+      },
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('@tailwindcss/typography'),
+  ],
+}
+```
 
-### Week 7
-* Advanced Training Strategies in Generative AI
-* Evaluation Techniques: Strengths and Limitations
+#### 3. Styling Strategies
 
-### Week 8
-* Using Generative AI for Synthetic Data Creation: Text, Images, Videos
-* Mechanics Behind Generative Processes and Real-world Implications
-* Generating text
+##### Consistent Component Styling
 
-### Week 9
-* Generating numeric data
-* Generating images
+```tsx
+// Consistent button styling approach
+const Button: React.FC<ButtonProps> = ({ 
+  label, 
+  variant = 'primary',
+  size = 'medium',
+  fullWidth = false,
+  onClick 
+}) => {
+  const baseClasses = "font-medium rounded transition-colors focus:outline-none focus:ring-2";
+  
+  const variantClasses = {
+    primary: "bg-hai-blue-700 text-white hover:bg-hai-blue-800 focus:ring-hai-blue-500",
+    secondary: "bg-hai-neutral-200 text-hai-neutral-700 hover:bg-hai-neutral-300 focus:ring-hai-neutral-400",
+    ghost: "bg-transparent text-hai-blue-700 hover:bg-hai-blue-50 focus:ring-hai-blue-500"
+  };
+  
+  const sizeClasses = {
+    small: "px-3 py-1.5 text-sm",
+    medium: "px-4 py-2",
+    large: "px-6 py-3 text-lg"
+  };
+  
+  return (
+    <button 
+      className={`
+        ${baseClasses}
+        ${variantClasses[variant]}
+        ${sizeClasses[size]}
+        ${fullWidth ? 'w-full' : ''}
+      `}
+      onClick={onClick}
+    >
+      {label}
+    </button>
+  );
+};
+```
 
-### Week 10
-* Generating audio
-* Generating video
+#### 4. Working with Data
 
-### Week 11
-* Leveraging Large Language Models for Data Verification
-* Benefits and Challenges of Cross-referencing Information
+```tsx
+// pages/blog.tsx
+import { useState, useEffect } from 'react';
+import { BlogPost } from '../types';
+import BlogCard from '../components/BlogCard/BlogCard';
 
-### Week 13
-* Introduction to Causal Inference in Data Visualization
-* Visual Techniques for Understanding Causality: Basics
+const BlogPage: React.FC = () => {
+  const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  
+  useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        // In a real application, this would be an API call
+        const response = await fetch('/api/blog-posts');
+        const data = await response.json();
+        setPosts(data);
+      } catch (error) {
+        console.error('Error fetching blog posts:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    fetchPosts();
+  }, []);
+  
+  if (loading) {
+    return <div className="text-center py-12">Loading...</div>;
+  }
+  
+  return (
+    <div className="container mx-auto px-4 py-12">
+      <h1 className="text-3xl font-bold mb-8">Latest Blog Posts</h1>
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map(post => (
+          <BlogCard key={post.id} post={post} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-### Week 14
-* Advanced Causal Analysis Techniques: Observational Studies and Beyond
-* Wrapping Up: IPTW Estimation, Causal Effect Identification, and Future Trends
+export default BlogPage;
+```
 
-### Week 15
-* Review
+### Useful TSX & Tailwind Resources
 
+1. **TypeScript React Cheat Sheet**: [TypeScript React Cheat Sheet](https://github.com/typescript-cheatsheets/react)
+2. **Tailwind CSS Documentation**: [Tailwind CSS Docs](https://tailwindcss.com/docs)
+3. **React TypeScript Starter**: [Create React App TypeScript](https://create-react-app.dev/docs/adding-typescript/)
+4. **Tailwind UI Components**: [Tailwind UI](https://tailwindui.com/) (paid resource)
+5. **Free Tailwind Components**: [Tailwind Components](https://tailwindcomponents.com/)
+
+### Common Gotchas and Solutions
+
+#### 1. TypeScript Props Validation
+
+**Problem**: Forgetting to validate optional props or using incorrect types.
+
+**Solution**:
+```tsx
+// Bad
+interface CardProps {
+  title: string;
+  description: string; // Could be null or undefined in real data
+}
+
+// Good
+interface CardProps {
+  title: string;
+  description?: string; // Mark as optional
+  imageUrl: string | null; // Allow null values
+  onClick?: () => void; // Optional event handler
+}
+```
+
+#### 2. Tailwind Class Organization
+
+**Problem**: Long strings of Tailwind classes become unmanageable.
+
+**Solution**: Group related classes with template literals:
+```tsx
+<div className={`
+  // Layout
+  flex flex-col items-center
+  // Spacing
+  p-4 my-8
+  // Colors
+  bg-white text-gray-800
+  // Effects
+  shadow-md rounded-lg hover:shadow-lg
+  // Responsive
+  md:flex-row md:p-6
+`}>
+  {/* Content here */}
+</div>
+```
+
+#### 3. Component Reusability
+
+**Problem**: Creating overly specific components that are hard to reuse.
+
+**Solution**: Use composition and props for flexibility:
+```tsx
+// Card.tsx - Base reusable card component
+const Card: React.FC<CardProps> = ({ 
+  children, 
+  padding = 'normal',
+  withShadow = true,
+  className = '' 
+}) => {
+  const paddingClasses = {
+    'none': '',
+    'small': 'p-2',
+    'normal': 'p-4',
+    'large': 'p-6'
+  };
+  
+  return (
+    <div className={`
+      bg-white rounded-lg
+      ${paddingClasses[padding]}
+      ${withShadow ? 'shadow-md' : ''}
+      ${className}
+    `}>
+      {children}
+    </div>
+  );
+};
+
+// Usage
+<Card padding="large" className="border border-gray-200">
+  <h3>Card Title</h3>
+  <p>Card content goes here...</p>
+</Card>
+```
