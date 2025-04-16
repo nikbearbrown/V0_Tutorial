@@ -1,5 +1,10 @@
 # Vercel Zero Project
 
+## Researchers
+
+Namns
+
+
 ## AI-Powered Web Development for Everyone
 
 The Vercel Zero Project by Humanitarians AI is an initiative to democratize web development through AI technology. We provide tutorials, templates, and resources to help students, non-profits, and small organizations create professional branded websites with minimal technical experience.
