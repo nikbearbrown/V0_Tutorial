@@ -26,3 +26,5 @@ Website demo: https://humanitarians-uc6h87jkv-abhinavs-projects-fc42dff9.vercel.
 GitHub source: https://github.com/nikbearbrown/Vercel_Zero/tree/main/Fellows/AbhinavManojPandey
 
 Figma board: https://www.figma.com/board/OwpJvWBWyLokWBtEs2dEQt/NEU-v0-Vercel-Websites?node-id=0-1&p=f&t=0gYZ7JdK92d4VDbl-0
+
+Notes:
